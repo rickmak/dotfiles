@@ -27,12 +27,12 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
+colorscheme slate
 
 set backspace=2
 
 set laststatus=2
 set number
-" set textwidth=78
 set expandtab
 set ruler
 set noerrorbells
@@ -40,15 +40,10 @@ set noerrorbells
 set tabstop=4
 set expandtab
 set shiftwidth=4
-
 set autoindent
 
 set list
 set listchars=tab:▸\ ,eol:¬
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
 
 au BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.md setlocal spell
