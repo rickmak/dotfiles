@@ -1,0 +1,12 @@
+*~
+.python-version
+.DS_Store
+nginx.access.log
+*.sublime-project
+*.sublime-workspace
+*.log
+*/__pycache__/
+*.swp
+
+.vscode
+node_modules
