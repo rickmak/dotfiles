@@ -1,15 +1,15 @@
 [user]
-	name = Rick Mak
-	email = rick.mak@gmail.com
-	signingkey = F6E253AF
+    name = Rick Mak
+    email = rick.mak@gmail.com
+    signingkey = F6E253AF
 
 [core]
-	excludesfile = ~/.gitignore_global
-	editor = /usr/bin/vim
+    excludesfile = ~/.gitignore_global
+    editor = /usr/bin/vim
 
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
 [push]
     default = simple
 
@@ -20,20 +20,20 @@
     insteadOf = https://gitlab.com/
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
-	process = git-lfs filter-process
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    required = true
+    process = git-lfs filter-process
 
 [log]
-	decorate = true
+    decorate = true
 
 [alias]
     l = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
-	praise = blame
+    praise = blame
     sweep = ! git branch -a | grep rickmak | grep -v master | sed -e \"s/remotes\\/rickmak\\///\" | xargs git push --delete rickmak
 [gpg]
-	program = gpg
+    program = gpg
 
 [diff "blackbox"]
     textconv = gpg --use-agent -q --batch --decrypt
