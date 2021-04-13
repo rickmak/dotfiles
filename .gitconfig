@@ -1,7 +1,7 @@
 [user]
 	name = Rick Mak
 	email = rick.mak@gmail.com
-	signingkey = CC81327D
+	signingkey = F6E253AF
 
 [core]
 	excludesfile = ~/.gitignore_global
