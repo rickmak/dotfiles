@@ -71,10 +71,5 @@ let g:prettier#autoformat_config_present = 1
 let g:prettier#autoformat_config_files = ['.prettierrc', 'prettier.config.js']
 autocmd FileType js,ts setlocal ts=2 sts=2 sw=2 expandtab
 
-" Running on all edit
-" let g:prettier#quickfix_enabled = 0
-" autocmd BufWritePre,TextChanged,InsertLeave *.js,*.ts,*.json,*.css,*.scss,*.less,*.graphql PrettierAsync
-
-
 " because vue contains various format in one file
 autocmd FileType vue syntax sync fromstart
