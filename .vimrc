@@ -27,7 +27,6 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
-colorscheme slate
 
 set backspace=2
 
@@ -47,7 +46,6 @@ set listchars=tab:▸\ ,eol:¬
 
 let &colorcolumn=join(range(81,999),",")
 let &colorcolumn="80,".join(range(120,999),",")
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 au BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.md setlocal spell
