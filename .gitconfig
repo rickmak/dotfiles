@@ -13,10 +13,10 @@
 [push]
     default = simple
 
-[url "git@github.com:"]
+[url "ssh://git@github.com/"]
     insteadOf = https://github.com/
 
-[url "git@gitlab.com:"]
+[url "ssh://git@gitlab.com/"]
     insteadOf = https://gitlab.com/
 
 [filter "lfs"]
